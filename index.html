@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Bracelet</title>
+    <style>
+        :root {
+            --primary-color: #6200ea;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 24px;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-muted);
+        }
+        .lang-switch {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .lang-switch:hover {
+            opacity: 0.8;
+        }
+        .hu-content {
+            display: none; /* Alapból az angol látszik */
+        }
+        .date {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 id="main-title">Privacy Policy</h1>
+        <button class="lang-switch" onclick="toggleLanguage()" id="lang-btn">HU / EN</button>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="en-content">
+        <p class="date"><strong>Last updated:</strong> September 2026</p>
+        <p>This Privacy Policy describes how the "Smart Bracelet" application (for mobile and Wear OS) collects, uses, and protects your information.</p>
+
+        <h2>1. Information We Do Not Collect</h2>
+        <p>Our application is built on a privacy-first, Peer-to-Peer (P2P) architecture. We <strong>do not</strong> have a centralized database, and we <strong>do not</strong> collect, store, or share your personal information (such as your name, email address, or location).</p>
+
+        <h2>2. Permissions and Device Data</h2>
+        <p>To provide its core functionality, the app requires certain on-device permissions:</p>
+        <ul>
+            <li><strong>Camera:</strong> Used strictly locally on your device to scan the pairing QR code. Images are never recorded, saved, or transmitted to any server.</li>
+            <li><strong>Internet / Network State:</strong> Required to send and receive haptic feedback and animations via Google Firebase Cloud Messaging (FCM).</li>
+        </ul>
+
+        <h2>3. Communication Data (Tokens)</h2>
+        <p>To pair your devices, the app generates an FCM (Firebase Cloud Messaging) token. This token is an anonymous string of characters used to route messages between you and your partner.</p>
+        <ul>
+            <li>These tokens are exchanged directly between users via QR code.</li>
+            <li>Messages are routed temporarily through a secure Cloudflare Worker solely for delivery purposes. Message content (animation IDs, haptic patterns) is not stored permanently.</li>
+        </ul>
+
+        <h2>4. In-App Purchases</h2>
+        <p>Our application offers premium features via Google Play Billing. All payment processing is handled securely by Google. We do not have access to your credit card information, billing address, or personal financial data. Your premium status is verified locally and through Google's APIs.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <p>The app uses the following third-party services, which have their own privacy policies:</p>
+        <ul>
+            <li><strong>Google Play Services & Firebase Cloud Messaging</strong> (for message delivery and billing)</li>
+            <li><strong>Cloudflare</strong> (for secure message routing)</li>
+        </ul>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <strong>89.toth.tamas@gmail.com</strong></p>
+    </div>
+
+    <!-- HUNGARIAN CONTENT -->
+    <div id="content-hu" class="hu-content">
+        <p class="date"><strong>Utolsó frissítés:</strong> 2026. Szeptember</p>
+        <p>Ez az Adatkezelési Tájékoztató bemutatja, hogyan kezeli és védi a "Smart Bracelet" (Mobil és Wear OS) alkalmazás az Ön adatait.</p>
+
+        <h2>1. Adatok, amelyeket NEM gyűjtünk</h2>
+        <p>Alkalmazásunk adatvédelmi központú, Peer-to-Peer (P2P) architektúrára épül. <strong>Nem rendelkezünk központi adatbázissal</strong>, és <strong>nem gyűjtjük</strong>, tároljuk vagy osztjuk meg az Ön személyes adatait (például nevét, e-mail címét vagy tartózkodási helyét).</p>
+
+        <h2>2. Engedélyek és Eszközadatok</h2>
+        <p>Az alapvető funkciók biztosításához az alkalmazásnak bizonyos helyi engedélyekre van szüksége:</p>
+        <ul>
+            <li><strong>Kamera:</strong> Kizárólag helyileg, a párosításhoz szükséges QR-kód beolvasására szolgál. A kameraképeket az alkalmazás nem rögzíti, nem menti és nem továbbítja semmilyen szerverre.</li>
+            <li><strong>Internet / Hálózati állapot:</strong> A rezgésminták és animációk küldéséhez és fogadásához szükséges a Google Firebase Cloud Messaging (FCM) rendszerén keresztül.</li>
+        </ul>
+
+        <h2>3. Kommunikációs Adatok (Tokenek)</h2>
+        <p>Az eszközök párosításához az alkalmazás egy FCM (Firebase Cloud Messaging) tokent generál. Ez egy anonim karaktersorozat, amely az üzenetek továbbítására szolgál Ön és partnere között.</p>
+        <ul>
+            <li>Ezeket a tokeneket a felhasználók közvetlenül cserélik ki QR-kód segítségével.</li>
+            <li>Az üzenetek ideiglenesen egy biztonságos Cloudflare Worker-en haladnak keresztül, kizárólag a kézbesítés céljából. Az üzenetek tartalmát (animációk azonosítói, rezgésminták) nem tároljuk véglegesen.</li>
+        </ul>
+
+        <h2>4. Alkalmazáson belüli vásárlások (In-App Purchases)</h2>
+        <p>Alkalmazásunk prémium funkciókat kínál a Google Play számlázási rendszerén keresztül. Minden fizetési folyamatot a Google biztonságosan kezel. Nem férünk hozzá az Ön bankkártya adataihoz, számlázási címéhez vagy személyes pénzügyi adataihoz. A prémium státusz ellenőrzése helyileg és a Google API-jain keresztül történik.</p>
+
+        <h2>5. Harmadik féltől származó szolgáltatások</h2>
+        <p>Az alkalmazás az alábbi harmadik féltől származó szolgáltatásokat használja, amelyek saját adatvédelmi irányelvekkel rendelkeznek:</p>
+        <ul>
+            <li><strong>Google Play Services & Firebase Cloud Messaging</strong> (üzenetkézbesítés és számlázás)</li>
+            <li><strong>Cloudflare</strong> (biztonságos üzenettovábbítás)</li>
+        </ul>
+
+        <h2>6. Jelen Adatkezelési Tájékoztató módosításai</h2>
+        <p>Adatvédelmi irányelveinket időről időre frissíthetjük. Javasoljuk, hogy rendszeresen tekintse át ezt az oldalt az esetleges változások miatt.</p>
+
+        <h2>7. Kapcsolat</h2>
+        <p>Ha bármilyen kérdése vagy javaslata van az Adatkezelési Tájékoztatónkkal kapcsolatban, forduljon hozzánk bizalommal: <strong>89.toth.tamas@gmail.com</strong></p>
+    </div>
+</div>
+
+<script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+        const enContent = document.getElementById('content-en');
+        const huContent = document.getElementById('content-hu');
+        const title = document.getElementById('main-title');
+        
+        if (currentLang === 'en') {
+            enContent.style.display = 'none';
+            huContent.style.display = 'block';
+            title.innerText = 'Adatkezelési Tájékoztató';
+            currentLang = 'hu';
+        } else {
+            enContent.style.display = 'block';
+            huContent.style.display = 'none';
+            title.innerText = 'Privacy Policy';
+            currentLang = 'en';
+        }
+    }
+</script>
+
+</body>
+</html>
